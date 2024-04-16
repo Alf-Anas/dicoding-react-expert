@@ -79,7 +79,7 @@ describe('fetchNewThread thunk function', () => {
     );
     expect(dispatch).toHaveBeenCalledWith(setNewThreadError({ error: '' }));
     expect(dispatch).toHaveBeenCalledWith(
-      setNewThreadStatus({ status: ProcessingState.SUCCESS }),
+      setNewThreadStatus({ status: ProcessingState.FAILURE }),
     );
     expect(dispatch).toHaveBeenCalledWith(
       setNewThreadError({ error: expect.any(String) as unknown as string }),
