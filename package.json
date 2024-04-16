@@ -18,7 +18,8 @@
     "test": "jest --verbose",
     "test:watch": "jest --watch",
     "cypress:open": "cypress open",
-    "e2e": "cypress run"
+    "e2e": "cypress run",
+    "ci:test": "jest --verbose && start-server-and-test dev http://localhost:3000 \"cypress run --e2e\""
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.1",
@@ -60,6 +61,7 @@
     "postcss": "^8",
     "prettier": "^3.2.5",
     "standard": "^17.1.0",
+    "start-server-and-test": "^2.0.3",
     "storybook": "^8.0.8",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
