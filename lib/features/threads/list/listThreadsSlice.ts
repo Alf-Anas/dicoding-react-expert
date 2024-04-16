@@ -58,7 +58,7 @@ const fetchListThreads = (bgProcess?: boolean) => {
       setListThreadsStatus({
         status: bgProcess
           ? ProcessingState.BG_PROGRESS
-          : ProcessingState.BG_PROGRESS,
+          : ProcessingState.IN_PROGRESS,
       }),
     );
     dispatch(setListThreadsError({ error: '' }));

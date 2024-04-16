@@ -89,7 +89,7 @@ export default function LoginPage() {
         Login
       </Button>
       <Typography.Text className='mt-0'>
-        Didn't have an account?
+        Didn`t have an account?
         <Link href='/register' className='ml-1 !text-primary-color'>
           Register Here
         </Link>
