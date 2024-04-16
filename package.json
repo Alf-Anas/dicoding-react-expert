@@ -19,7 +19,7 @@
     "test:watch": "jest --watch",
     "cypress:open": "cypress open",
     "e2e": "cypress run",
-    "ci:test": "jest --verbose && start-server-and-test dev http://localhost:3000 \"cypress run --e2e\""
+    "ci:test": "jest --verbose && start-server-and-test dev http-get://0.0.0.0:3000 e2e"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.1",
